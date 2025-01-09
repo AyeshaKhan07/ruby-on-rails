@@ -1,8 +1,8 @@
-<h1>New product</h1>
-<%= form_with model: @new_product do |form| %>
+<h1>Update Product</h1>
+<%= form_with model: @product_to_update do |form| %>
     <div>
         <%= form.label :name %>
-        <%= form.text_field :name, class: 'new_product_form', onchange: "nameChangeHandler(event)" %>
+        <%= form.text_field :name, class: 'edit_product_form', onchange: "nameChangeHandler(event)" %>
     </div>
 
     <div>
